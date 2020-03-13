@@ -75,4 +75,12 @@ y = torch.sin(x)
 %matplotlib inline    
 plt.plot(x.numpy(),y.numpy())
 
+# %% 2D tensor    
+x = torch.tensor([[2,1],[1,2]])
+y = torch.tensor([[2,1],[1,2]])
+print(x * y)
+print(x[0:2,1])
+
+# %% 2D tensor matrix multiplication 
+print(torch.mm(x,x))
 # %%
